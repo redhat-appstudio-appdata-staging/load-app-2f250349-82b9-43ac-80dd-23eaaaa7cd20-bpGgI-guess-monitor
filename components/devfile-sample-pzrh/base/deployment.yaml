@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-pzrh
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-49-tenant/load-app-2f250349-82b9-43ac-80dd-23eaaaa7cd20/devfile-sample-pzrh@sha256:0b9a299c897deeb343132e2331031531dfe7dce2ede10098d33c192312533f34
         name: my-nodejs
         ports:
         - containerPort: 3001
