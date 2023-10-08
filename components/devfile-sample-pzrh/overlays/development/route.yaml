@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-pzrh
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-pzrh
+    app.kubernetes.io/part-of: load-app-2f250349-82b9-43ac-80dd-23eaaaa7cd20
+  name: devfile-sample-pzrhnswk
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-pzrh
+    weight: null
+status: {}
